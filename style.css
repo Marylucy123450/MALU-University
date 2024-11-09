@@ -417,48 +417,72 @@ h3{
 
 .red-btn:hover{
   color: #fff;
-
 }
 
-/*blog-content*/
-.blog-content{
-  width: 80%;
+
+
+/* Make sure the body and html take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%; 
   margin: auto;
   padding: 60px 0;
+  gap: 10px;  
 }
 
-.blog-left{
-  flex-basis: 65%;
+
+.blog-left {
+  flex-basis: 45%; 
+  padding-right: 10px;  
 }
 
-.blog-left img{
+.blog-left img {
   width: 100%;
+  margin-bottom: 10px; 
 }
 
-.blog-left h2{
+.blog-left h2 {
   color: #222;
   font-weight: 600;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
-.blog-left p{
+.blog-left p {
   color: #999;
-  padding: 0;
+  margin: 0;
+  padding: 0; 
 }
 
 
-.blog-right{
-  flex-basis: 32%;
+.blog-right {
+  flex-basis: 50%; 
+  order: 2;
+  padding-left: 10px; 
+  margin-left: 0;
 }
 
-.blog-right h3{
+.blog-right h3 {
   background: #f44336;
   color: #fff;
   padding: 7px 0;
   font-size: 16px;
   margin-bottom: 20px;
-} 
-.blog-right div{
+}
+
+.blog-right div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -467,8 +491,61 @@ h3{
   box-sizing: border-box;
 }
 
-.comment-box{
+
+.comment-box {
   border: 1px solid #ccc;
   margin: 50px 0;
   padding: 10px 20px;
+}
+
+.comment-box h3 {
+  text-align: left;
+}
+
+
+.comment-form input, .comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+
+.comment-form button {
+  margin: 10px 0;
+}
+
+
+.footer {
+  margin-top: auto;
+  background: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer .icons i {
+  margin: 0 10px;
+}
+
+@media(max-width: 700px) {
+  .sub-header {
+    font-size: 24px;
+  }
+
+  .blog-content {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .blog-left, .blog-right {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+
+  .footer {
+    padding: 20px;
+  }
 }
