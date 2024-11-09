@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  <title>MALU University Website.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="MALU_img/logo.png"></a>
+      <div class="nav-links" id="nav-Links">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">COURSE</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Courses</h1>
+    </section>
+
+<!-------Course----->
+<section class="course">
+  <h1>Our Courses</h1>
+  <p>Explore our diverse range of courses and find the one that suits your interests and goals.</p>
+
+  <div class="row">
+  <div class="course-col">
+      <h3>Intermediate</h3>
+     <p>
+      Build on your foundational knowledge with hands-on projects, learn essential frameworks, and strengthen your problem-solving skills to advance in your field.
+     </p>
+    </div>
+
+     <div class="course-col">
+      <h3>Degree</h3>
+     <p>
+      Earn a comprehensive education that equips you with in-depth knowledge, practical skills, and the qualifications needed to excel in your chosen career.
+     </p>
+    </div>
+
+     <div class="course-col">
+      <h3>Post Graduation</h3>
+     <p>
+      Enhance your expertise with advanced studies, research opportunities, and specialized training to become a leader in your field.
+     </p>
+    </div>
+
+    </div>
+
+</section>
+
+<!--Facilities-->
+<section class="facilities">
+  <h1>Our Facilities</h1>
+  <p>
+    At MALU University, we prioritize creating a conducive environment for learning and personal development. From modern classrooms to recreational areas, our facilities are designed to enhance your university experience, providing you with everything you need to excel academically and maintain a healthy work-life balance. Explore our state-of-the-art amenities that ensure comfort, convenience, and opportunities for growth during your time with us.
+  </p>
+
+  <div class="row">
+    <div class="facilities-col">
+      <img src="MALU_img/library.png">
+      <h3>Library and Study Areas</h3>
+      <p>
+        Access a vast collection of books, research materials, and digital resources in our quiet, comfortable study spaces designed to foster focus and academic growth.
+      </p>
+    </div>
+
+    <div class="facilities-col">
+      <img src="MALU_img/basketball.png">
+      <h3>Basketball Court</h3>
+      <p>
+        Our state-of-the-art basketball court provides students with the perfect space for physical activity and team sports. Whether you're a seasoned player or a beginner, the court is available for recreational play, training, and intramural competitions. It's an excellent way to stay active, build teamwork skills, and unwind after your studies. Join us for an exciting game or practice session and make the most of your university experience!
+      </p>
+    </div>
+
+    <div class="facilities-col">
+      <img src="MALU_img/cafeteria.png">
+      <h3>Cafeteria</h3>
+      <p>
+        Our modern cafeteria offers a wide variety of healthy and delicious meals to fuel your day. With a range of options catering to different dietary preferences, you'll find everything from local dishes to international cuisine. The spacious seating area provides a comfortable space to relax, socialize, or study between classes. Whether you're grabbing a quick snack or enjoying a full meal, the cafeteria is the perfect place to recharge and connect with friends.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+
+ 
+ 
+ <!-------Footer----->
+ <section class="footer">
+   <h4>About Us</h4>
+   <p>
+    MALU University is dedicated to providing high-quality education that empowers students to excel in a dynamic world. With a focus on academic excellence, innovation, and personal growth, we offer diverse programs designed to prepare students for leadership roles.<br> Our supportive community, state-of-the-art facilities, and hands-on learning opportunities ensure that every student has the resources they need to succeed.<br> Join us and become part of a forward-thinking institution shaping the leaders of tomorrow.
+   </p>
+
+   <div class="icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-linkedin"></i>
+</div>
+
+    <p>
+      Made with by<i class="fa fa-heart"></i> Marylucy Atieno
+    </p>
+    
+ </section>
+
+
+
+
+
+
+  <!-------JS FOR TOGGLE MENU----->
+
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    
+
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+
+
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+
+
+  </script>
+</body>
+</html>
