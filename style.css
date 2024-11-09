@@ -561,3 +561,25 @@ body {
 .location iframe{
   width: 100%;
 }
+
+.contact-us{
+  width: 80%;
+  margin: auto;
+}
+
+.contact-call{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-call div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-call div .fa{
+  font-size: 28px;
+  color: #f44336;
+  margin: 10px;
+  margin-right: 30px;
+}
