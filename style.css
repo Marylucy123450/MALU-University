@@ -363,19 +363,22 @@ h3{
 }
 
 /* About Us */
-.sub-header{
+.sub-header {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(MALU_img/background.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(MALU_img/background.jpg);
+  background-position: bottom right; 
+  background-size: auto 100%; 
   text-align: center;
   color: #fff;
+  position: relative; 
 }
 
-.sub-header h1{
-  margin-top: 100px;
+.sub-header h1 {
+  margin-top: 20%;
 }
+
+
 
 .about-us{
   width: 80%;
@@ -383,6 +386,7 @@ h3{
   padding-top: 80px;
   padding-bottom: 50px;
 }
+
 
 
 .about-col{
@@ -394,9 +398,12 @@ h3{
   width: 100%;
 }
 
-.about-col h1{
+.about-col h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
   padding-top: 0;
-  }
+}
 
 .about-col p{
   padding: 15px 0 25px;
@@ -410,5 +417,5 @@ h3{
 
 .red-btn:hover{
   color: #fff;
-  
+
 }
