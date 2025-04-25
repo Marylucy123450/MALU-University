@@ -343,28 +343,101 @@ h3{
 }
 
 /* footer */
-.footer{
-  width: 100%;
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
   text-align: center;
-  padding: 30px 0;
 }
 
-.footer h4{
-  margin-bottom: 25px;
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about {
+  flex: 1 1 45%;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex: 1 1 45%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-links-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-column ul li {
+  margin: 10px 0;
+}
+
+.footer-links-column ul li a {
+  text-decoration: none;
+  color: #00b894; /* Link color */
+  font-size: 16px;
+}
+
+.footer-links-column ul li a:hover {
+  color: #fff; /* Hover color */
+}
+
+.footer-social {
   margin-top: 20px;
-  font-weight: 600;
 }
 
-.icons .fa{
-  color: #f44336;
-  margin: 0 13px;
-  cursor: pointer;
-  padding: 18px 0;
+.footer-social h4 {
+  margin-bottom: 10px;
 }
 
-.fa.fa-heart {
-  color: #f44336;
+.icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
 }
+
+.icons a:hover {
+  color: #00b894; /* Icon hover color */
+}
+
+.footer-credit {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about, .footer-links {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links-column {
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 
 /* About Us */
 .sub-header {
