@@ -184,28 +184,31 @@ h3{
   }
 }
 
+
 /* campus */
-.campus{
-  width: 80;
+.campus {
+  width: 80%;
   margin: auto;
   text-align: center;
   padding: 50px;
 }
 
-.campus-col{
+.campus-col {
   flex-basis: 32%;
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+  height: 300px;  /* Set a fixed height to ensure uniform size */
 }
 
-.campus-col:img{
+.campus-col img {
   width: 100%;
-  display: block;
+  height: 100%;  /* Ensure the image takes the full height of the container */
+  object-fit: cover;  /* Ensures the image fills the container while maintaining aspect ratio */
 }
 
-.layer{
+.layer {
   background: transparent;
   height: 100%;
   width: 100%;
@@ -215,12 +218,11 @@ h3{
   transition: 0.5s;
 }
 
-.layer:hover{
-  background: rgba(226,0,0,0.7);
+.layer:hover {
+  background: rgba(226, 0, 0, 0.7);
 }
 
-
-.layer h3{
+.layer h3 {
   width: 100%;
   font-weight: 500;
   color: #fff;
@@ -233,39 +235,41 @@ h3{
   transition: 0.5s;
 }
 
-.layer:hover h3{
+.layer:hover h3 {
   bottom: 49%;
   opacity: 1;
 }
 
-.facilities{
+/* Facilities */
+.facilities {
   width: 80%;
-  margin:  auto;
+  margin: auto;
   text-align: center;
   padding-top: 100px;
 }
 
-.facilities-col{
+.facilities-col {
   flex-basis: 31%;
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
 }
 
-.facilities-col img{
+.facilities-col img {
   width: 100%;
   border-radius: 10px;
 }
 
-.facilities-col p{
+.facilities-col p {
   padding: 0px;
 }
 
-.facilities-col h3{
+.facilities-col h3 {
   margin-top: 16px;
   margin-bottom: 15px;
   text-align: left;
 }
+
 
 /*testimonials*/
 .testimonials{
